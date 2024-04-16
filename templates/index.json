@@ -74,7 +74,7 @@
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
-        "bg_gradient": "",
+        "bg_gradient": "bg-gradient",
         "text_color": "text-body",
         "border_top_width": 0,
         "border_bottom_width": 0,
@@ -84,7 +84,7 @@
         "products": [
 
         ],
-        "collection": "latest",
+        "collection": "frontpage",
         "limit": 8,
         "recommended_mode": true,
         "recommended_mode_intent": "related",
