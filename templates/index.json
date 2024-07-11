@@ -121,21 +121,13 @@
         "collection_rznnLq": {
           "type": "collection",
           "settings": {
-            "collection": "men",
-            "title": ""
-          }
-        },
-        "collection_kRQqkR": {
-          "type": "collection",
-          "settings": {
-            "collection": "sale",
+            "collection": "e-worksheets",
             "title": ""
           }
         }
       },
       "block_order": [
-        "collection_rznnLq",
-        "collection_kRQqkR"
+        "collection_rznnLq"
       ],
       "settings": {
         "bg_color": "bg-body",
