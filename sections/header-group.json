@@ -86,12 +86,12 @@
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
-        "bg_gradient": "",
+        "bg_gradient": "bg-gradient",
         "text_color": "text-secondary",
         "border_top_width": 0,
         "border_bottom_width": 0,
         "border_color": "border-body",
-        "border_opacity": 100,
+        "border_opacity": 0,
         "shadow": ""
       }
     }
