@@ -71,7 +71,8 @@
           "type": "desktop",
           "settings": {
             "container_max_width": "",
-            "logo_height": 32,
+            "logo": "shopify:\/\/shop_images\/Soul_Education_logo_f301b851-cc6a-4fdd-8f9b-923273015cfc.png",
+            "logo_height": 50,
             "main_menu": "main-menu",
             "pt": 5,
             "pb": 5
