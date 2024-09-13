@@ -59,8 +59,8 @@
                   class="carousel-media"
                   src="{{ block.settings.img_mobile | image_url: width: '800' }}"
                   alt=" {{ block.settings.img_mobile.alt }}"
-                  width="1000"
-                  height="{{ 800 | divided_by: block.settings.img_mobile.aspect_ratio | round }}"
+                  width="800"
+                  height="{{ 1000 | divided_by: block.settings.img_mobile.aspect_ratio | round }}"
                   loading="{{ media_loading }}"
                   style="{{ media_mobile_height }}"
                 >
