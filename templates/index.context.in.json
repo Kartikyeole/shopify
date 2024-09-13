@@ -13,5 +13,16 @@
     "market": "in"
   },
   "sections": {
+    "hero_carousel_CmDneU": {
+      "settings": {
+      },
+      "blocks": {
+        "slide_Q4UPQq": {
+          "settings": {
+            "img_mobile": "shopify:\/\/shop_images\/img_7d179341-a950-42f2-91a3-4b2cbda2a7bf.png"
+          }
+        }
+      }
+    }
   }
 }
