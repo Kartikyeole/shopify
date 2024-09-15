@@ -64,9 +64,9 @@ class Cart extends HTMLElement {
         sections_url: window.location.pathname
       })
     })
-    console.log(response)
+    // console.log(response)
     const data = await response.json()
-    console.log(data)
+    // console.log(data)
 
     if (response.ok) {
       window.dispatchEvent(new CustomEvent('kt.cart.changed', { detail: data }))
