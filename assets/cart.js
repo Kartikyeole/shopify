@@ -100,7 +100,7 @@ class Cart extends HTMLElement {
 
   showError (message) {
     const alert = this.querySelector('.alert')
-
+    console.log(message)
     if (alert) {
       alert.querySelector('[data-alert-msg]').innerHTML = message
       alert.removeAttribute('hidden')
