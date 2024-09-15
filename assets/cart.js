@@ -72,6 +72,7 @@ class Cart extends HTMLElement {
       window.dispatchEvent(new CustomEvent('kt.cart.changed', { detail: data }))
       this.reloadCartElements(data.sections)
     } else {
+      console.log(75)
       this.showError(data.description)
     }
 
