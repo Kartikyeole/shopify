@@ -31,9 +31,9 @@ class Cart extends HTMLElement {
       method: 'POST',
       body: formData
     })
-    console.log(response)
+    // console.log(response)
     const data = await response.json()
-    console.log(data)
+    // console.log(data)
 
     if (response.ok) {
       window.dispatchEvent(new CustomEvent('kt.cart.added', { detail: data }))
