@@ -22,6 +22,7 @@
         },
         "slide_mwF4Tk": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "announcement": "Free Shipping For All Orders Over $100"
           }
