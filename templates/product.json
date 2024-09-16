@@ -214,7 +214,7 @@
         "border_top_width": 0,
         "border_bottom_width": 0,
         "border_color": "border-body",
-        "border_opacity": 100,
+        "border_opacity": 0,
         "container_max_width": "",
         "pt": 10,
         "pb": 10
