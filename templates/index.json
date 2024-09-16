@@ -371,6 +371,7 @@
         "item_BUkPE7",
         "item_DtBFNc"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-primary",
         "bg_opacity": 5,
@@ -464,6 +465,7 @@
         "item_kWLWrb",
         "item_dizKmG"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
