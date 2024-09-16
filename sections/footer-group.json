@@ -38,17 +38,35 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "menu_7NNYWR": {
+          "type": "menu",
+          "settings": {
+            "menu": "main-menu",
+            "title_font_size": "fs-lg",
+            "title": "LINKS"
+          }
+        },
         "7468602d-7e94-4bd5-9673-02b2f8269581": {
           "type": "menu",
           "settings": {
             "menu": "footer",
             "title_font_size": "fs-xl",
-            "title": "Policies"
+            "title": "OUR POLICY"
+          }
+        },
+        "menu_JeyG4P": {
+          "type": "menu",
+          "settings": {
+            "menu": "links",
+            "title_font_size": "fs-lg",
+            "title": "CATEGORIES"
           }
         }
       },
       "block_order": [
-        "7468602d-7e94-4bd5-9673-02b2f8269581"
+        "menu_7NNYWR",
+        "7468602d-7e94-4bd5-9673-02b2f8269581",
+        "menu_JeyG4P"
       ],
       "settings": {
         "bg_color": "bg-secondary",
