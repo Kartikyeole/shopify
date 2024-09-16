@@ -29,6 +29,23 @@
             "btn_secondary_url": "shopify:\/\/collections\/latest"
           }
         },
+        "slide_yzNxi7": {
+          "type": "slide",
+          "settings": {
+            "img_mobile": "shopify:\/\/shop_images\/soul_vertical_img_450X897_48369e48-4e3c-4e07-83d7-f237cf70468b.jpg",
+            "img_desktop": "shopify:\/\/shop_images\/oo435.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_blur": 0,
+            "subtitle": "",
+            "title": "",
+            "description": "",
+            "btn_primary_text": "",
+            "btn_primary_url": "shopify:\/\/collections\/all",
+            "btn_secondary_text": "",
+            "btn_secondary_url": "shopify:\/\/collections\/latest"
+          }
+        },
         "slide_TddqxQ": {
           "type": "slide",
           "settings": {
@@ -49,6 +66,7 @@
       },
       "block_order": [
         "slide_Q4UPQq",
+        "slide_yzNxi7",
         "slide_TddqxQ"
       ],
       "settings": {
