@@ -57,7 +57,7 @@
               <div class="d-tablet-none">
                 <img
                   class="carousel-media"
-                  src="{{ block.settings.img_mobile | image_url: width: '800' }}"
+                  src="{{ block.settings.img_mobile | image_url: width: '800', crop: 'center' }}"
                   alt=" {{ block.settings.img_mobile.alt }}"
                   width="800"
                   height="{{ 1000 | divided_by: block.settings.img_mobile.aspect_ratio | round }}"
