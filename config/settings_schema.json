@@ -1,12 +1,5 @@
 [
-  {
-    "name": "theme_info",
-    "theme_name": "ks_bootshop",
-    "theme_version": "5.0.0",
-    "theme_author": "KondaSoft",
-    "theme_documentation_url": "https:\/\/www.kondasoft.com",
-    "theme_support_url": "https:\/\/community.kondasoft.com"
-  },
+
   {
     "name": "Colors",
     "settings": [
@@ -32,6 +25,12 @@
         "type": "color",
         "id": "color_body_color",
         "label": "Body color",
+        "default": "#212529"
+      },
+      {
+        "type": "color",
+        "id": "color_try",
+        "label": "try",
         "default": "#212529"
       }
     ]
