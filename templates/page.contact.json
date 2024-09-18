@@ -9,6 +9,33 @@
 */
 {
   "sections": {
+    "richtext_9hfMVB": {
+      "type": "richtext",
+      "settings": {
+        "bg_color": "bg-body",
+        "bg_opacity": 100,
+        "bg_gradient": "",
+        "text_color": "text-body",
+        "border_top_width": 0,
+        "border_bottom_width": 0,
+        "border_color": "border-body",
+        "border_opacity": 100,
+        "container_max_width": "900",
+        "text_align": "text-center",
+        "title": "About us",
+        "title_font_size": "h2",
+        "description": "<p><strong>Soul Education is  passionate about empowering learners and educators through innovative, high-quality educational products. Founded on the belief that education is the cornerstone of personal and societal growth, we are here to create products that inspire curiosity, foster creativity, and enhance learning experiences for students of all ages.<\/strong><\/p><p><strong>Our product range is designed to meet the evolving needs of today’s learners—whether in classrooms, at home, or in professional settings. <\/strong><\/p><p><strong>We are working closely with educators, parents, and industry experts to ensure our offerings are aligned with modern learning standards and teaching practices. By blending traditional educational principles with cutting-edge technology, we aim to make learning more accessible and inclusive for all.<\/strong><\/p><p><strong>Soul education is  dedicated to shaping the future of education, one innovative solution at a time.<\/strong><\/p>",
+        "description_font_size": "fs-lg",
+        "btn_primary_text": "",
+        "btn_primary_url": "",
+        "btn_primary_color": "btn-primary",
+        "btn_secondary_text": "",
+        "btn_secondary_url": "",
+        "btn_secondary_color": "btn-secondary",
+        "pt": 9,
+        "pb": 9
+      }
+    },
     "separator_K486jA": {
       "type": "separator",
       "settings": {
@@ -76,6 +103,7 @@
     }
   },
   "order": [
+    "richtext_9hfMVB",
     "separator_K486jA",
     "custom_liquid_wti4Ny",
     "5d7e9d3e-ba1d-498d-a3fd-144ce2e406e5",
