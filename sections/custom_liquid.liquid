@@ -1,4 +1,66 @@
 {{ section.settings.custom_liquid }}
+
+<section>
+  <section class="contact-info">
+    <div class="contact-section">
+      <div class="contact-box">
+        <h3>ADDRESS</h3>
+        <p>
+          Kalakaram India Pvt. Ltd., 379, Phase 2, Sector 7, IMT Manesar<br>
+          Gurugram, Haryana- 122050, India
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <h3>CALL US</h3>
+        <p>+91 98108 74998</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>CIN NUMBER</h3>
+        <p>U74999HR2022PTC102176</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>EMAIL</h3>
+        <p>info@kalakaram.com</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .contact-section {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .contact-box {
+        text-align: center;
+        flex: 1;
+        padding: 0 15px;
+    }
+
+    .contact-box img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .contact-box h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact-box p {
+        font-size: 14px;
+        color: #555;
+    }
+  </style>
+</section>
 {% schema %}
 {
    "name": "Custom Liquid",
