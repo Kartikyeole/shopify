@@ -11,33 +11,23 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
-    "newsletter_fL4LWF": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "bg_color": "bg-secondary",
-        "bg_opacity": 5,
-        "bg_gradient": "bg-gradient",
-        "text_color": "text-body",
-        "border_top_width": 1,
-        "border_bottom_width": 0,
-        "border_color": "border-secondary",
-        "border_opacity": 10,
-        "container_max_width": "600",
-        "header_title": "Newsletter Subscribe",
-        "header_title_font_size": "h3",
-        "header_description": "<p>Add on optional description for this section<\/p>",
-        "header_description_font_size": "fs-md",
-        "btn_color": "btn-primary",
-        "btn_size": "",
-        "notice": "<p>By signing up for email, you agree to our <a href=\"\/policies\/terms-of-service\">Terms of Service<\/a> and <a href=\"\/policies\/privacy-policy\">Privacy Policy<\/a>.<\/p>",
-        "pt": 11,
-        "pb": 11
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
+        "richtext_FVfrth": {
+          "type": "richtext",
+          "settings": {
+            "title": "About Us",
+            "title_font_size": "fs-lg",
+            "description": "<p>Soul Education is  passionate about empowering learners and educators through innovative, high-quality educational products. Founded on the belief that education is the cornerstone of personal and societal growth, we are here to create products that inspire curiosity, foster creativity, and enhance learning experiences for students of all ages.<\/p>",
+            "btn_primary_text": "",
+            "btn_primary_url": "",
+            "btn_primary_color": "btn-primary",
+            "btn_secondary_text": "",
+            "btn_secondary_url": "",
+            "btn_secondary_color": "btn-secondary"
+          }
+        },
         "menu_7NNYWR": {
           "type": "menu",
           "settings": {
@@ -64,6 +54,7 @@
         }
       },
       "block_order": [
+        "richtext_FVfrth",
         "menu_7NNYWR",
         "7468602d-7e94-4bd5-9673-02b2f8269581",
         "menu_JeyG4P"
@@ -86,7 +77,6 @@
     }
   },
   "order": [
-    "newsletter_fL4LWF",
     "footer"
   ]
 }
