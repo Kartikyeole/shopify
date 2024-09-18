@@ -29,18 +29,19 @@
   </section>
 
   <style>
-
     .contact-section {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 20px;
         margin: 20px;
     }
 
     .contact-box {
-        text-align: left;
-        flex: 1;
+        flex: 1 1 calc(25% - 30px); /* This ensures 4 boxes in a row on larger screens */
+        margin: 15px 0; /* Adds some spacing between the boxes */
         padding: 0 15px;
+        text-align: left;
     }
 
     .contact-box img {
@@ -58,6 +59,27 @@
     .contact-box p {
         font-size: 14px;
         color: #555;
+    }
+
+    /* Media Queries for Responsiveness */
+
+    /* For tablets (max-width 768px) */
+    @media (max-width: 768px) {
+        .contact-box {
+            flex: 1 1 calc(50% - 20px); /* 2 boxes per row */
+        }
+    }
+
+    /* For mobile phones (max-width 480px) */
+    @media (max-width: 480px) {
+        .contact-box {
+            flex: 1 1 100%; /* Full width for mobile */
+            text-align: center; /* Center text for mobile */
+        }
+
+        .contact-box img {
+            margin-bottom: 10px; /* Adds space between the icon and text on small screens */
+        }
     }
   </style>
 </section>
