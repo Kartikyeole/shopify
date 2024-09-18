@@ -1,26 +1,28 @@
 <div
-  id="html-section-{{ section.id }}" 
+  id="html-section-{{ section.id }}"
   class="
-    html-section 
-    {{ section.settings.bg_color }} 
+    html-section
+    {{ section.settings.bg_color }}
     {{ section.settings.bg_gradient }}
     {{ section.settings.text_color }}
     {{ section.settings.border_top_width | prepend: 'border-top-' }}
     {{ section.settings.border_bottom_width | prepend: 'border-bottom-' }}
-    {{ section.settings.border_color }} 
+    {{ section.settings.border_color }}
     {{ section.settings.text_align }}
-    {{ section.settings.pt | prepend: 'pt-' }} 
+    {{ section.settings.pt | prepend: 'pt-' }}
     {{ section.settings.pb | prepend: 'pb-' }}
   "
   style="
     --bs-bg-opacity: {{ section.settings.bg_opacity | append: '%' }};
     --bs-border-opacity: {{ section.settings.border_opacity | append: '%' }};
-  ">
-  <div 
-    class="{{ section.settings.container }}" 
-    style="max-width: {{ section.settings.container_max_width }}px">
-    
+  "
+>
+  <div
+    class="{{ section.settings.container }}"
+    style="max-width: {{ section.settings.container_max_width }}px"
+  >
     <div class="px-6">
+      hi
       {% render 'section-header' %}
     </div>
 
@@ -148,7 +150,7 @@
     },
     {
       "type": "header",
-      "content": "General" 
+      "content": "General"
     },
     {
       "type": "select",
