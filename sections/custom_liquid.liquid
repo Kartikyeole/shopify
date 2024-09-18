@@ -22,18 +22,26 @@
     style="max-width: {{ section.settings.container_max_width }}px"
   >
     <div class="row align-items-center">
-      <div class="col-desktop-7">
+      <div class="col-desktop-6">
         <h3>ADDRESS</h3>
+        <p>
+          {{ section.settings.address }}
+        </p>
+      </div>
+      <div class="col-desktop-6">
+        <h3>Mobile</h3>
         <p>
           Kalakaram India Pvt. Ltd., 379, Phase 2, Sector 7, IMT Manesar<br>
           Gurugram, Haryana- 122050, India
         </p>
       </div>
-      <div class="col-desktop-7">hi how are you</div>
-      <div class="col-desktop-18">hi how are you</div>
-      <div class="col-desktop-18">hi how are you</div>
-      <div class="col-desktop-18">hi how are you</div>
-      <div class="col-desktop-18">hi how are you</div>
+      <div class="col-desktop-6">
+        <h3>Email</h3>
+        <p>
+          Kalakaram India Pvt. Ltd., 379, Phase 2, Sector 7, IMT Manesar<br>
+          Gurugram, Haryana- 122050, India
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -45,6 +53,13 @@
          {
       "type": "header",
       "content": "Styling"
+    },
+     {
+      "type": "richtext",
+       "id": "address",
+       "label": "Address of Shop"
+
+
     },
     {
       "type": "select",
