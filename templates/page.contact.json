@@ -13,6 +13,8 @@
       "type": "custom_liquid",
       "settings": {
         "address": "<p>Shop C, Ganesh Srinivas Apartment, Vishrambag, Sangli 416415<\/p>",
+        "mobile": 8805776025,
+        "email": "<p>learnwithsoule@gmail.com<\/p>",
         "bg_color": "bg-body",
         "bg_opacity": 100,
         "bg_gradient": "",
