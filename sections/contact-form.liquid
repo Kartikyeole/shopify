@@ -1,27 +1,100 @@
 <section
-  id="contact-form-section-{{ section.id }}" 
+  id="contact-form-section-{{ section.id }}"
   class="
-    contact-form-section 
-    {{ section.settings.bg_color }} 
+    contact-form-section
+    {{ section.settings.bg_color }}
     {{ section.settings.bg_gradient }}
     {{ section.settings.text_color }}
     {{ section.settings.border_top_width | prepend: 'border-top-' }}
     {{ section.settings.border_bottom_width | prepend: 'border-bottom-' }}
-    {{ section.settings.border_color }} 
-    {{ section.settings.pt | prepend: 'pt-' }} 
+    {{ section.settings.border_color }}
+    {{ section.settings.pt | prepend: 'pt-' }}
     {{ section.settings.pb | prepend: 'pb-' }}
   "
   style="
     --bs-bg-opacity: {{ section.settings.bg_opacity | append: '%' }};
     --bs-border-opacity: {{ section.settings.border_opacity | append: '%' }};
-  ">
-  <div 
-    class="container" 
-    style="max-width: {{ section.settings.container_max_width }}px">
+  "
+>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .contact-box {
+        text-align: center;
+        flex: 1;
+        padding: 0 15px;
+    }
+
+    .contact-box img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .contact-box h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact-box p {
+        font-size: 14px;
+        color: #555;
+    }
+  </style>
+
+  <div class="contact-section">
+    <div class="contact-box">
+      <!-- <img src="address-icon.png" alt="Address Icon"> -->
+      <h3>ADDRESS</h3>
+      <p>
+        Kalakaram India Pvt. Ltd., 379, Phase 2, Sector 7, IMT Manesar<br>
+        Gurugram, Haryana- 122050, India
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <!-- <img src="phone-icon.png" alt="Phone Icon"> -->
+      <h3>CALL US</h3>
+      <p>+91 98108 74998</p>
+    </div>
+
+    <div class="contact-box">
+      <!-- <img src="cin-icon.png" alt="CIN Icon"> -->
+      <h3>CIN NUMBER</h3>
+      <p>U74999HR2022PTC102176</p>
+    </div>
+
+    <div class="contact-box">
+      <!-- <img src="email-icon.png" alt="Email Icon"> -->
+      <h3>EMAIL</h3>
+      <p>info@kalakaram.com</p>
+    </div>
+  </div>
+
+  <div
+    class="container"
+    style="max-width: {{ section.settings.container_max_width }}px"
+  >
     <div class="row align-items-center">
-      {% if section.settings.img != nil %}
+      {% if section.settings.img != null %}
         <div class="col-desktop-7 mb-6 mb-desktop-0">
-          {% render 'image-url', img: section.settings.img, size: 900, orientation: section.settings.img_orientation, class: section.settings.img_border %}
+          {% render 'image-url',
+            img: section.settings.img,
+            size: 900,
+            orientation: section.settings.img_orientation,
+            class: section.settings.img_border
+          %}
         </div>
       {% endif %}
       <div class="{% if section.settings.img == nil %}col-desktop-18{% else %}col-desktop-11{% endif %}">
@@ -34,43 +107,46 @@
           {% endif %}
           {{ form.errors | default_errors }}
           <div class="form-floating  mb-5">
-            <input 
+            <input
               id="contact-form-name"
-              class="form-control" 
-              type="text" 
+              class="form-control"
+              type="text"
               name="contact[name]"
-              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"  
+              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
               placeholder="{{ 'general.contact_form.name' | t }}"
-              required>
+              required
+            >
             <label for="contact-form-name">
               {{ 'general.contact_form.name' | t }}
             </label>
           </div>
           <div class="form-floating  mb-5">
-            <input 
+            <input
               id="contact-form-email"
-              class="form-control" 
-              type="email" 
+              class="form-control"
+              type="email"
               name="contact[email]"
-              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"  
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
               placeholder="{{ 'general.contact_form.email' | t }}"
               spellcheck="false"
               autocapitalize="off"
-              required>
+              required
+            >
             <label for="contact-form-email">
               {{ 'general.contact_form.email' | t }}
             </label>
           </div>
           <div class="form-floating  mb-5">
-            <input 
+            <input
               id="contact-form-phone"
-              class="form-control" 
-              type="tel" 
+              class="form-control"
+              type="tel"
               name="contact[phone]"
-              value="{{ customer.phone }}"  
+              value="{{ customer.phone }}"
               placeholder="{{ 'general.contact_form.phone' | t }}"
               pattern="[0-9\-]*"
-              autocomplete="tel">
+              autocomplete="tel"
+            >
             <label for="contact-form-phone">
               {{ 'general.contact_form.phone' | t }}
             </label>
@@ -80,20 +156,22 @@
               id="contact-form-message"
               class="form-control"
               name="contact[message]"
-              value="{{ customer.phone }}"  
+              value="{{ customer.phone }}"
               placeholder="{{ 'general.contact_form.message' | t }}"
               required
-              style="height: 200px">
+              style="height: 200px"
+            >
               {{- form.body -}}
             </textarea>
             <label for="contact-form-message">
               {{ 'general.contact_form.message' | t }}
             </label>
           </div>
-          <button 
-              type="submit" 
-              class="btn btn-lg w-100 btn-primary">
-              {{ 'general.contact_form.send' | t }}
+          <button
+            type="submit"
+            class="btn btn-lg w-100 btn-primary"
+          >
+            {{ 'general.contact_form.send' | t }}
           </button>
         {% endform %}
       </div>
