@@ -7,16 +7,7 @@
   Variables
 */
 
-@font-face {
-    font-family: 'Londrina Solid';
-    src: url('{{ 'LondrinaSolid-Regular.woff' | asset_url }}') format('woff'), /* For modern browsers */
-        
-    font-weight: normal;
-    font-style: normal;
-}
-h1, h2, h3, h4, h5, h6, body, p, a{
-  font-family: "Londrina Solid";
-}
+
 
 :root {
   --bs-link-color: currentColor;
@@ -424,6 +415,7 @@ h1, h2, h3, h4, h5, h6, body, p, a{
   right: 0;
   display: flex;
   justify-content: center;
+  font-family:"Londrina Solid";
 }
 
 .carousel-caption-inner {
@@ -1690,4 +1682,15 @@ a:hover .article-card-img-wrapper img {
 #offcanvas-blog-tags .list-group-item-action {
   border-bottom-style: dashed;
   border-bottom-width: 1px;
+}
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('{{ 'LondrinaSolid-Regular.woff' | asset_url }}') format('woff'), /* For modern browsers */
+        
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, body, p, a{
+  font-family: "Londrina Solid";
 }
