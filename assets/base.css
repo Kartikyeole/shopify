@@ -1685,12 +1685,12 @@ a:hover .article-card-img-wrapper img {
 }
 
 @font-face {
-    font-family: 'Londrina Solid';
-    src: url('LondrinaSolid-Regular.woff') format('woff'),
-         url('LondrinaSolid-Regular.woff2') format('woff2'),
-         url('LondrinaSolid-Regular.ttf') format('truetype');
+    font-family: 'londrina_solidregular';
+    src: url('londrinasolid-regular-webfont.woff2') format('woff2'),
+         url('londrinasolid-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 h1, h2, h3, h4, h5, h6, body, p, a{
