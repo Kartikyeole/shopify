@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Londrina Solid';
-    src: url("{{ '[LondrinaSolid-Regular]' | file_url }}") format("[woff]");
-         url("{{ '[LondrinaSolid-Regular]' | file_url }}") format("[woff2]");
+    src: url('LondrinaSolid-Regular.woff2') format('woff2'),
+        url('LondrinaSolid-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
