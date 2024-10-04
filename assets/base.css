@@ -58,6 +58,7 @@
 */
 .container {
   max-width: var(--bs-container-max-width);
+  font-family: 'Londrina Solid', sans-serif;
 }
 
 
