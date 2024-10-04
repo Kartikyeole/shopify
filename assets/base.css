@@ -8,8 +8,8 @@
 */
 
 @font-face {
-    font-family: 'Londrina Solid';
-    src:url('LondrinaSolid-Regular.ttf') format('ttf'),
+    font-family: 'Londrina';
+    src:url('LondrinaSolid-Regular.woff') format('woff'),
         
     font-weight: normal;
     font-style: normal;
@@ -18,7 +18,7 @@
 
 
 .coustocss{
-  font-family: "Londrina Solid";
+  font-family: "Londrina";
   background: black;
 }
 
