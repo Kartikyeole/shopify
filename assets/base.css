@@ -6,6 +6,15 @@
 /*
   Variables
 */
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('{{ 'LondrinaSolid-Regular.ttf' | asset_url }}') format('ttf'), /* For modern browsers */
+        
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
   --bs-link-color: currentColor;
   --bs-link-color-rgb: currentColor;
