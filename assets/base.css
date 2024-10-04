@@ -1687,6 +1687,7 @@ a:hover .article-card-img-wrapper img {
 @font-face {
     font-family: 'Londrina Solid';
     src: url('LondrinaSolid-Regular.woff') format('woff'),
+         url('LondrinaSolid-Regular.woff2') format('woff2'),
          url('LondrinaSolid-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
