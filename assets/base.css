@@ -7,6 +7,21 @@
   Variables
 */
 
+@font-face {
+    font-family: 'londrina_solidregular';
+    src: url('./londrinasolid-regular-webfont.woff2') format('woff2'),
+         url('./londrinasolid-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.coustocss{
+  font-family: "londrina_solidregular";
+  background: black;
+}
 
 
 :root {
@@ -1684,20 +1699,3 @@ a:hover .article-card-img-wrapper img {
   border-bottom-width: 1px;
 }
 
-@font-face {
-    font-family: 'londrina_solidregular';
-    src: url('./londrinasolid-regular-webfont.woff2') format('woff2'),
-         url('./londrinasolid-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-h1, h2, h3, h4, h5, h6, body, p, a{
-  font-family: "Londrina Solid";
-}
-
-.coustocss{
-  font-family: "Londrina Solid";
-  background: black;
-}
