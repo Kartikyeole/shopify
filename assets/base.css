@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Londrina Solid';
-    src: url('LondrinaSolid-Regular.woff2') format('woff2'),
-        url('LondrinaSolid-Regular.woff') format('woff');
+    src: url("{{ 'https://cdn.shopify.com/s/files/1/0891/0428/6016/files/LondrinaSolid-Regular.woff?v=1728050298' | file_url }}") format("woff");
+         url("{{ 'https://cdn.shopify.com/s/files/1/0891/0428/6016/files/LondrinaSolid-Regular.woff2?v=1728050298' | file_url }}") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
