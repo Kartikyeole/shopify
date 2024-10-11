@@ -240,6 +240,10 @@
 /* 
   ATC/Buy buttons
 */
+.btn {
+  width: auto; /* Ensure the button doesn’t take up unnecessary width */
+  display: inline-block; /* Ensures the button stays inline */
+}
 .btn-atc,
 .btn-buy,
 .btn-quick-view {
@@ -283,10 +287,12 @@
 .product-card-actions {
   display: flex;
   justify-content: flex-start; /* Aligns the button to the left */
+  margin-top: 1rem;
 }
 
 .product-card-actions .btn {
   margin-left: 0; /* Removes any default margins */
+  margin-right: 0.5rem;
 }
 
 .product-card-img-wrapper {
