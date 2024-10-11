@@ -246,6 +246,7 @@
   width: 50%;
 }
 
+
 .product-block-atc.rounded {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
@@ -273,7 +274,7 @@
   Product card
 */
 .product-card-link {
-  display: block;
+  display: grid;
   text-decoration: none;
   color: currentColor;
 }
