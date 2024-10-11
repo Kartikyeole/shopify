@@ -240,16 +240,11 @@
 /* 
   ATC/Buy buttons
 */
-.btn {
-  width: auto; /* Ensure the button doesn’t take up unnecessary width */
-  display: inline-block; /* Ensures the button stays inline */
-}
 .btn-atc,
 .btn-buy,
 .btn-quick-view {
-  width: 50%;
+  width: 100%;
 }
-
 
 .product-block-atc.rounded {
   border-top-left-radius: 0 !important;
@@ -277,34 +272,20 @@
 /*
   Product card
 */
-.product-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
+.product-card-link {
+  display: block;
+  text-decoration: none;
+  color: currentColor;
 }
 
-.product-card-actions {
-  display: flex;
-  justify-content: flex-start; /* Aligns the button to the left */
-  margin-top: 1rem;
-}
-
-.product-card-actions .btn {
-  margin-left: 0; /* Removes any default margins */
-  margin-right: 0.5rem;
-}
-
-.product-card-img-wrapper {
-  position: relative;
+.product-card-link:focus-visible {
+  outline: 0;
+  box-shadow: var(--bs-focus-box-shadow);
 }
 
 .product-card-title {
   margin-bottom: 0.2em;
-}
-
-.product-card-img-wrapper img {
-  transition: all .2s ease-out;
+  transition: all 200ms ease-out;
 }
 
 .product-card-link:hover .product-card-title,
@@ -312,11 +293,96 @@
   opacity: .85;
 }
 
+.product-card-img-wrapper {
+  position: relative;
+}
+
+.product-card-img-wrapper img {
+  transition: all .2s ease-out;
+}
+
+a:hover .product-card-img-wrapper img {
+  opacity: .8;
+}
+
+.product-card-img-wrapper .badge {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.product-card-img-wrapper .product-sale-badge {
+}
+
+.product-card-img-wrapper .product-sale-badge[data-discount-type="percentage"] {
+  top: -0.5rem;
+  right: -0.5rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50rem;
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 599px) {
+  .product-card-img-wrapper .product-sale-badge[data-discount-type="percentage"] {
+    right: -0.375rem;
+  }
+}
+
+.product-card-img-wrapper .product-sale-badge[data-discount-type="value"] {
+  right: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.product-card-img-wrapper .product-sold-out-badge {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bs-body-color);
+}
+
+.product-card-img-wrapper .product-custom-badge {
+  left: 0;
+  top: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .product-card-btn-wishlist {
   position: absolute;
   bottom: 0.25rem;
   right: 0.25rem;
   z-index: 2;
+  display: inline-flex;
+  padding: 0.75rem;
+  border-radius: 50rem;
+  transition: all 200ms ease-out;
+  background: transparent;
+  color: rgba(var(--controls-color-rgb), 1);
+}
+
+.product-card-btn-wishlist:hover,
+.product-card-btn-wishlist:focus {
+  color: rgba(var(--controls-color-rgb), 1);
+  transform: scale(1.15);
+}
+
+.product-card-btn-wishlist:active,
+.product-card-btn-wishlist.active {
+  border-color: transparent !important;
+}
+
+.product-card-btn-wishlist.active svg {
+  fill: var(--controls-color-rgb);
+  stroke: var(--controls-color-rgb);
+}
+
+.product-card-btn-wishlist:focus-visible {
+  box-shadow: var(--bs-focus-box-shadow);
 }
 
 .product-card .carousel {
@@ -326,8 +392,72 @@
 .product-card .carousel .carousel-control {
   width: 1.5rem;
   height: 1.5rem;
+  padding: 0.25rem;
+  background-color: rgba(var(--controls-color-rgb), .05);
+  color: rgba(var(--controls-color-rgb), 1);
 }
 
+.product-card-color-swatches {
+  position: absolute;
+  bottom: 1.125rem;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  width: 60%;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-card-color-swatches img {
+  border-radius: 50rem;
+  display: block;
+  cursor: pointer;
+  margin: 0.125rem;
+}
+
+
+/*
+  Quick view
+*/
+.quick-view-modal { 
+}
+
+.quick-view-modal .btn-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  background: var(--bs-body-bg);
+  border-radius: 50rem;
+}
+
+@media (max-width: 1199px) {
+  .quick-view-modal .btn-close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: opacity 200ms ease-out 300ms;
+  }
+  .quick-view-modal.show .btn-close {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quick-view-modal .modal-body .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  .quick-view-modal .modal-body .row > * {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .quick-view-modal .product-title {
+    margin-right: 2rem;
+  }
+}
 
 
 /*
