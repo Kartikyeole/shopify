@@ -41,7 +41,7 @@
           "settings": {
             "title": "",
             "title_font_size": "h6",
-            "description": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
+            "description": "<p>{{ product.metafields.descriptors.subtitle.value }}</p>",
             "description_font_size": "",
             "product_description": false,
             "description_classes": "opacity-70",
@@ -52,8 +52,8 @@
         "095886ab-f46a-4a25-9d3d-e7c79235921b": {
           "type": "price",
           "settings": {
-            "font_size": "fs-lg",
-            "badge_discount_type": "percentage",
+            "font_size": "fs-xl",
+            "badge_discount_type": "value",
             "pt": 0,
             "pb": 3
           }
@@ -99,9 +99,9 @@
             "label": "What we promise",
             "max_width": "460",
             "img_size": 24,
-            "text_1": "<p>Commitment to<br\/>Excellence<\/p>",
-            "text_2": "<p>100% Satisfaction<br\/>Guarantee<\/p>",
-            "text_3": "<p>Free Shipping<\/p>",
+            "text_1": "<p>Commitment to<br/>Excellence</p>",
+            "text_2": "<p>100% Satisfaction<br/>Guarantee</p>",
+            "text_3": "<p>Free Shipping</p>",
             "text_4": "",
             "pt": 0,
             "pb": 7
@@ -137,7 +137,7 @@
             "title_font_size": "fs-md",
             "title_text_transform": "text-capitalize",
             "title_letter_spacing": 1,
-            "description": "<p>Feel free to create additional blocks like this for <strong>Shipping, Payments, etc <\/strong>through the Shopify Theme editor. Also, you may easily adjust their order by dragging and dropping.<\/p>",
+            "description": "<p>Feel free to create additional blocks like this for <strong>Shipping, Payments, etc </strong>through the Shopify Theme editor. Also, you may easily adjust their order by dragging and dropping.</p>",
             "product_description": false,
             "description_font_size": "fs-md",
             "border_top_width": 1,
@@ -153,12 +153,12 @@
           "type": "collapse",
           "settings": {
             "icon_size": 20,
-            "title": "Refunds\/Cancellations",
+            "title": "Refunds/Cancellations",
             "title_font_family": "",
             "title_font_size": "fs-md",
             "title_text_transform": "text-capitalize",
             "title_letter_spacing": 1,
-            "description": "<p><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\"><strong>Refund policy<\/strong><\/a><\/p>",
+            "description": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\"><strong>Refund policy</strong></a></p>",
             "product_description": false,
             "description_font_size": "fs-md",
             "border_top_width": 1,
@@ -184,7 +184,7 @@
           "type": "liquid",
           "disabled": true,
           "settings": {
-            "liquid": "<p class=\"bg-primary text-white rounded p-5\">Today's date: <b>{{ 'now' | date: \"%b %d, %Y\" }}<\/b><\/p>",
+            "liquid": "<p class=\"bg-primary text-white rounded p-5\">Today's date: <b>{{ 'now' | date: \"%b %d, %Y\" }}</b></p>",
             "pt": 3,
             "pb": 3
           }
@@ -246,7 +246,7 @@
         "recommended_mode_intent": "related",
         "header_title": "Recommended Products",
         "header_title_font_size": "h3",
-        "header_description": "<p>Add on optional description for this section<\/p>",
+        "header_description": "<p>Add on optional description for this section</p>",
         "header_description_font_size": "fs-md",
         "slider_speed": 300,
         "slider_navigation": true,
